@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            background-image: url('images/hand.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-radius: 50px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 10px 0;
+            font-size: large;
+            font-family: sans-serif;
+        }
+
+        .navbar ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li {
+            color: black;
+            /* changed to black */
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li:hover {
+            cursor: pointer;
+            color: rgb(168, 131, 6);
+            /* hover color */
+        }
+
+        .subheading {
+            margin: auto;
+            margin-left: -20px;
+            display: grid;
+            color: #e3820b;
+            justify-content: center;
+        }
+
+        .middlecontent h3,
+        .middlecontent p {
+            margin-left: 60px;
+            color: #650e0e;
+        }
+
+        .middlecontent:hover {
+            color: #18031d;
+        }
+
+        .gallery {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .redirection {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .redirection a {
+            font-size: 18px;
+            color: bisque;
+            text-decoration: none;
+            transition: font-size 0.3s ease, color 0.3s ease;
+        }
+
+        .redirection a:hover {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        /* New table styles */
+        .art-table-section {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .art-table-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1d0d5f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1d0d5f;
+            color: white;
+        }
+
+        tr {
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        tr:hover {
+            transform: scale(1.01);
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Anmol's Art Gallery</h1>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Featured</li>
+            <li>Art Gallery</li>
+            <li>Artist</li>
+            <li>Category</li>
+        </ul>
+    </div>
+
+
+    <div class="subheading" id="image">
+        <h2>WE BELIEVE</h2>
+    </div>
+
+    <div class="middlecontent">
+        <h3>ART CAN MAKE THIS WORLD A BETTER PLACE</h3>
+        <p>When I go to an art gallery and stand in front of a painting, I don't want someone telling me what I should
+            be seeing or thinking; I want to feel whatever I feel, see whatever I see, and figure out what I figure out.
+        </p>
+    </div>
+
+    <div class="gallery" id="featured_art_works">
+        <img src="images/img1.jpg" alt="">
+        <img src="images/img2.jpg" alt="">
+        <img src="images/img3.jpg" alt="">
+    </div>
+
+    <!-- Art Types Table Section -->
+    <div class="art-table-section">
+        <h2>Types of Art</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Painting</td>
+                    <td>Art made using pigments like watercolor, oil, or acrylic on surfaces such as canvas or walls.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sculpture</td>
+                    <td>Three-dimensional artwork created by shaping materials like stone, metal, or clay.</td>
+                </tr>
+                <tr>
+                    <td>Photography</td>
+                    <td>Capturing moments using a camera and presenting them as visual stories or compositions.</td>
+                </tr>
+                <tr>
+                    <td>Digital Art</td>
+                    <td>Art created using digital tools like tablets and software, often for web or media use.</td>
+                </tr>
+                <tr>
+                    <td>Calligraphy</td>
+                    <td>The art of decorative handwriting or lettering with a pen, brush, or other writing instrument.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="redirection">
+        <a href="https://www.bing.com/images/search?q=art+gallery+images&form=HDRSC3&first=1" target="_blank">For more
+            images CLICK HERE!</a>
+    </div>
+</body>
+
+</html>
