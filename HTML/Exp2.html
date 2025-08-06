@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Support Request Form Page</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+
+        .header,
+        .formcontainer {
+            margin: auto;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        fieldset {
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            margin-top: 5px;
+            width: 100%;
+            padding: 8px;
+            font-size: 1em;
+        }
+
+        .submit-reset {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .submit-reset input,
+        .submit-reset button {
+            width: 45%;
+        }
+
+        progress {
+            width: 100%;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Tech Support Request Form</h1>
+    </div>
+
+    <div class="formcontainer">
+        <form action="/serverlogic" method="POST">
+
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required maxlength="30">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required maxlength="30">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}"
+                    maxlength="10" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required minlength="6">
+            </fieldset>
+
+            <fieldset>
+                <legend>Device & Location</legend>
+                <label for="protype">Select your device</label>
+                <select name="product_type" id="protype" required>
+                    <option value="" selected disabled>--Select--</option>
+                    <option>Computer</option>
+                    <option>Laptop</option>
+                    <option>Mobile Phone</option>
+                    <option>Tablet</option>
+                    <option>Others</option>
+                </select>
+
+                <label for="states">Select your State</label>
+                <select name="state" id="states" required>
+                    <option value="" selected disabled>--Select--</option>
+                    <option>UP</option>
+                    <option>Kerala</option>
+                    <option>Tamil Nadu</option>
+                    <option>Delhi</option>
+                    <option>Maharashtra</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Language</legend>
+                <label>
+                    <input type="radio" name="language" value="Hindi" required> Hindi
+                </label>
+                <label>
+                    <input type="radio" name="language" value="English" required> English
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of Issues</legend>
+                <label><input type="checkbox" name="issue_network" value="Network"> Network Issues</label>
+                <label><input type="checkbox" name="issue_hardware" value="Hardware"> Hardware Problems</label>
+                <label><input type="checkbox" name="issue_software" value="Software"> Software Errors</label>
+                <label><input type="checkbox" name="issue_other" value="Other"> Others</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Issue Description</legend>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" cols="50"
+                    placeholder="Describe your issue here..." maxlength="500"></textarea>
+
+                <label for="supportingLink">Supporting URL (if any)</label>
+                <input type="url" id="supportingLink" name="supportingLink" placeholder="http://example.com">
+
+                <label for="search">Search Support Topic</label>
+                <input type="search" id="search" name="search" placeholder="Search here">
+
+                <label for="fileUpload">Attach File</label>
+                <input type="file" id="fileUpload" name="fileUpload">
+            </fieldset>
+
+            <fieldset>
+                <legend>Progress Indicator</legend>
+                <label for="progress">Form Completion Progress</label>
+                <progress id="progress" value="60" max="100"></progress>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agreement</legend>
+                <label>
+                    <input type="checkbox" name="terms" required> I accept the Terms and Conditions and processing of my
+                    location
+                </label>
+            </fieldset>
+
+            <div class="submit-reset">
+                <input type="reset" value="Reset">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
