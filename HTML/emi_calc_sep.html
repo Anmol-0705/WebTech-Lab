@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bank Loan EMI Calculator</title>
+    <link rel="stylesheet" href="../CSS/emi_calc.css" />
+</head>
+
+<body>
+    <h1>🏦 Bank Loan EMI Calculator</h1>
+    <div class="wrap">
+        <section class="card">
+            <div class="grid grid-2">
+                <div>
+                    <label for="amount">Loan Amount (₹)</label>
+                    <input id="amount" type="number" min="0" step="1000" value="500000">
+                </div>
+                <div>
+                    <label for="rate">Annual Interest Rate (%)</label>
+                    <input id="rate" type="number" min="0" step="0.01" value="9.5">
+                </div>
+                <div>
+                    <label for="tenureVal">Tenure</label>
+                    <div class="row">
+                        <input id="tenureVal" type="number" min="1" value="5">
+                        <select id="tenureUnit">
+                            <option value="years" selected>Years</option>
+                            <option value="months">Months</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" style="justify-content:flex-end">
+                    <button id="genSchedule" class="btn">📄 Generate Amortization Schedule</button>
+                    <button id="clearSchedule" class="btn secondary">Clear</button>
+                </div>
+            </div>
+        </section>
+        <aside class="card">
+            <h2>Summary</h2>
+            <table>
+                <tbody id="summaryBody"></tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total Payment</td>
+                        <td id="totalPay">0</td>
+                    </tr>
+                    <tr>
+                        <td>Total Interest</td>
+                        <td id="totalInt">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </aside>
+    </div>
+    <section class="card" style="max-width:1150px;margin:18px auto 0">
+        <h2>Amortization Schedule</h2>
+        <div id="scheduleWrap"></div>
+    </section>
+    <script src="../JavaScript/emi_calc.js"></script>
+</body>
+
+</html>
