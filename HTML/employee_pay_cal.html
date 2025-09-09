@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Payroll Calculator</title>
+  <link rel="stylesheet" href="../CSS/employee.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Employee Payroll Calculator</h2>
+    <input type="number" id="basic" placeholder="Basic Salary">
+    <input type="number" id="hra" placeholder="HRA">
+    <input type="number" id="da" placeholder="DA">
+    <input type="number" id="incentive" placeholder="Incentive">
+    <button id="calcBtn">Calculate Salary</button>
+
+    <div class="result">
+      <p><b>Gross Salary:</b> <span id="gross">0.00</span></p>
+      <p><b>Tax Amount:</b> <span id="tax">0.00</span></p>
+      <p><b>Net Salary:</b> <span id="net">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../JavaScript/employee_script.js"></script>
+</body>
+</html>

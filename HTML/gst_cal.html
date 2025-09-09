@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Calculator</title>
+  <link rel="stylesheet" href="../CSS/gst_styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>GST Calculator</h2>
+    <input type="number" id="amount" placeholder="Amount">
+    <select id="gstRate">
+      <option value="5">5%</option>
+      <option value="12" selected>12%</option>
+      <option value="18">18%</option>
+      <option value="28">28%</option>
+    </select>
+    <button id="calcBtn">Calculate</button>
+    <button id="resetBtn" class="reset">Reset</button>
+
+    <div class="result">
+      <div class="box">
+        <b>Actual Amount:</b>
+        <span id="actual">0.00</span>
+      </div>
+      <div class="box">
+        <b>GST:</b>
+        <span id="gst">0.00</span>
+      </div>
+      <div class="box">
+        <b>Total:</b>
+        <span id="total">0.00</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../JavaScript/gst_script.js"></script>
+</body>
+</html>
