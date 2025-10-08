@@ -1,0 +1,74 @@
+.checker-container {
+  background: #fff;
+  padding: 25px;
+  width: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.error-box {
+  background: #ffe6e6;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 6px;
+  color: #a00;
+}
+
+.result-box {
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.eligible {
+  background: #e6ffed;
+  color: #1b7a25;
+  border: 1px solid #1b7a25;
+}
+
+.not-eligible {
+  background: #ffe6e6;
+  color: #a00;
+  border: 1px solid #a00;
+}
