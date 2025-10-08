@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/WebTech-Lab/static/css/main.2fe5a617.css",
-    "main.js": "/WebTech-Lab/static/js/main.910afca9.js",
-    "static/js/453.dd8bfb69.chunk.js": "/WebTech-Lab/static/js/453.dd8bfb69.chunk.js",
-    "index.html": "/WebTech-Lab/index.html",
-    "main.2fe5a617.css.map": "/WebTech-Lab/static/css/main.2fe5a617.css.map",
-    "main.910afca9.js.map": "/WebTech-Lab/static/js/main.910afca9.js.map",
-    "453.dd8bfb69.chunk.js.map": "/WebTech-Lab/static/js/453.dd8bfb69.chunk.js.map"
+    "main.css": "/WebTech-Lab/loan-eligibility-checker/static/css/main.2fe5a617.css",
+    "main.js": "/WebTech-Lab/loan-eligibility-checker/static/js/main.db1c1a5f.js",
+    "static/js/453.dd8bfb69.chunk.js": "/WebTech-Lab/loan-eligibility-checker/static/js/453.dd8bfb69.chunk.js",
+    "index.html": "/WebTech-Lab/loan-eligibility-checker/index.html",
+    "main.2fe5a617.css.map": "/WebTech-Lab/loan-eligibility-checker/static/css/main.2fe5a617.css.map",
+    "main.db1c1a5f.js.map": "/WebTech-Lab/loan-eligibility-checker/static/js/main.db1c1a5f.js.map",
+    "453.dd8bfb69.chunk.js.map": "/WebTech-Lab/loan-eligibility-checker/static/js/453.dd8bfb69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fe5a617.css",
-    "static/js/main.910afca9.js"
+    "static/js/main.db1c1a5f.js"
   ]
 }
